@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario para reportar el ingreso de un animal rescatado al refugio.">
+  <meta name="author" content="Edison Erwin Salazar Ajila">
+  <title>Reportar rescate | Sistema de Control de Rescate y Adopción Animal</title>
+</head>
+<body>
+
+  <!-- Encabezado y logo -->
+  <header>
+    <img src="assets/img/logo-refugio.svg" alt="Logo del Refugio Animal" width="80" height="80">
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <p>Refugio Animal Manabí: cada reporte cuenta, cada caso tiene seguimiento.</p>
+  </header>
+
+  <!-- Menú principal común a todas las páginas -->
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="reportar.html" aria-current="page">Reportar rescate</a></li>
+      <li><a href="rescates.html">Casos registrados</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido exclusivo de la página -->
+  <main>
+
+    <section id="formulario">
+      <h2>Reportar un nuevo rescate</h2>
+      <p>
+        Complete el formulario para registrar el ingreso de un animal rescatado.
+        Los campos marcados con asterisco (*) son obligatorios.
+        El caso se registrará en estado <strong>Reportado</strong>.
+      </p>
+
+      <form action="rescates.html" method="get">
+
+        <fieldset>
+          <legend>Datos del caso</legend>
+
+          <p>
+            <label for="titulo">Título del caso o nombre provisional *</label><br>
+            <input type="text" id="titulo" name="titulo" required minlength="5" maxlength="80"
+                   placeholder="Ejemplo: Perro herido en la vía a Crucita">
+          </p>
+
+          <p>
+            <label for="especie">Categoría (especie) *</label><br>
+            <select id="especie" name="especie" required>
+              <option value="">Seleccione una categoría</option>
+              <option value="perro">Perros</option>
+              <option value="gato">Gatos</option>
+              <option value="fauna-silvestre">Fauna Silvestre</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="fecha">Fecha del hallazgo *</label><br>
+            <input type="date" id="fecha" name="fecha" required max="2026-12-31">
+          </p>
+
+          <p>
+            <label for="ubicacion">Ubicación del hallazgo *</label><br>
+            <input type="text" id="ubicacion" name="ubicacion" required minlength="5" maxlength="120"
+                   placeholder="Calle, sector o referencia">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nivel de urgencia médica *</legend>
+          <p>
+            <input type="radio" id="urgencia-alta" name="urgencia" value="alta" required>
+            <label for="urgencia-alta">Alta: riesgo de vida, requiere atención inmediata</label>
+          </p>
+          <p>
+            <input type="radio" id="urgencia-media" name="urgencia" value="media">
+            <label for="urgencia-media">Media: herido o enfermo, pero estable</label>
+          </p>
+          <p>
+            <input type="radio" id="urgencia-baja" name="urgencia" value="baja">
+            <label for="urgencia-baja">Baja: sin lesiones visibles</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Estado en que se encontró</legend>
+          <p>
+            <label for="descripcion">Descripción detallada *</label><br>
+            <textarea id="descripcion" name="descripcion" rows="6" cols="60" required
+                      minlength="20" maxlength="500"
+                      placeholder="Describa las lesiones, el comportamiento y las condiciones del lugar (mínimo 20 caracteres)"></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos del reportante</legend>
+          <p>
+            <label for="reportante">Nombres y apellidos *</label><br>
+            <input type="text" id="reportante" name="reportante" required minlength="3" maxlength="60"
+                   autocomplete="name">
+          </p>
+          <p>
+            <label for="correo">Correo electrónico *</label><br>
+            <input type="email" id="correo" name="correo" required maxlength="80"
+                   autocomplete="email" placeholder="nombre@ejemplo.com">
+          </p>
+          <p>
+            <label for="telefono">Teléfono celular (10 dígitos)</label><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" maxlength="10"
+                   autocomplete="tel" placeholder="0991234567"
+                   title="Ingrese 10 dígitos, sin espacios ni guiones">
+          </p>
+          <p>
+            <input type="checkbox" id="acepta" name="acepta" value="si" required>
+            <label for="acepta">Confirmo que la información proporcionada es verdadera *</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Registrar rescate</button>
+          <button type="reset">Limpiar formulario</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section id="recomendaciones">
+      <h2>Antes de reportar</h2>
+
+      <article>
+        <h3>Si es un perro o un gato</h3>
+        <ul>
+          <li>Acérquese con calma y evite movimientos bruscos.</li>
+          <li>No le dé alimentos ni medicamentos sin indicación veterinaria.</li>
+          <li>Si puede, permanezca cerca hasta que llegue el voluntario.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Si es fauna silvestre</h3>
+        <ul>
+          <li>No intente capturar ni manipular al animal.</li>
+          <li>Mantenga la distancia y aleje a otras personas y mascotas.</li>
+          <li>Indique con precisión el lugar para que acuda personal autorizado.</li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <address>
+      Refugio Animal Manabí, Portoviejo, Ecuador.
+      Correo: <a href="mailto:contacto@refugioanimal.example">contacto@refugioanimal.example</a>.
+      Teléfono: <a href="tel:+59350000000">(05) 000-0000</a>.
+    </address>
+    <p><small>&copy; 2026 Edison Erwin Salazar Ajila. Proyecto académico de Desarrollo de Sistemas Informáticos, Universidad Técnica de Manabí.</small></p>
+  </footer>
+
+</body>
+</html>

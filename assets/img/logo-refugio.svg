@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="titulo-logo">
+  <title id="titulo-logo">Logo del Refugio: huella dentro de una casa</title>
+  <path d="M60 8 L112 54 H98 V110 H22 V54 H8 Z" fill="#1f7a4d"/>
+  <ellipse cx="60" cy="84" rx="17" ry="14" fill="#ffffff"/>
+  <ellipse cx="38" cy="66" rx="7" ry="9" fill="#ffffff"/>
+  <ellipse cx="52" cy="54" rx="7" ry="9" fill="#ffffff"/>
+  <ellipse cx="68" cy="54" rx="7" ry="9" fill="#ffffff"/>
+  <ellipse cx="82" cy="66" rx="7" ry="9" fill="#ffffff"/>
+</svg>
