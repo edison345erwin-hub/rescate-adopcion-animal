@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panel principal del Sistema de Control de Rescate y Adopción Animal: resumen del refugio y casos recientes.">
+  <meta name="author" content="Edison Erwin Salazar Ajila">
+  <title>Inicio | Sistema de Control de Rescate y Adopción Animal</title>
+</head>
+<body>
+
+  <!-- Encabezado y logo -->
+  <header>
+    <img src="assets/img/logo-refugio.svg" alt="Logo del Refugio Animal" width="80" height="80">
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <p>Refugio Animal Manabí: cada reporte cuenta, cada caso tiene seguimiento.</p>
+  </header>
+
+  <!-- Menú principal común a todas las páginas -->
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html" aria-current="page">Inicio</a></li>
+      <li><a href="reportar.html">Reportar rescate</a></li>
+      <li><a href="rescates.html">Casos registrados</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido exclusivo de la página -->
+  <main>
+
+    <section id="bienvenida">
+      <h2>Bienvenido al panel del refugio</h2>
+      <p>
+        Esta plataforma permite que cualquier ciudadano reporte un animal en riesgo,
+        que el refugio asigne de inmediato a un voluntario o veterinario responsable
+        y que cada caso avance por un ciclo de vida controlado hasta su adopción o liberación.
+      </p>
+      <p>
+        ¿Encontró un animal que necesita ayuda?
+        <a href="reportar.html">Registre un nuevo rescate</a> o
+        <a href="rescates.html">consulte los casos registrados</a>.
+      </p>
+    </section>
+
+    <section id="resumen">
+      <h2>Resumen del refugio</h2>
+      <p>Datos actualizados al <time datetime="2026-11-12">12 de noviembre de 2026</time>.</p>
+
+      <article>
+        <h3>Casos activos</h3>
+        <p><strong>18</strong> casos en seguimiento.</p>
+        <ul>
+          <li>Reportados: 4</li>
+          <li>Rescatados: 3</li>
+          <li>En tratamiento: 6</li>
+          <li>En adopción: 5</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Casos por especie</h3>
+        <ul>
+          <li>Perros: 9</li>
+          <li>Gatos: 6</li>
+          <li>Fauna silvestre: 3</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Resultados del mes</h3>
+        <ul>
+          <li>Animales adoptados: 7</li>
+          <li>Ejemplares liberados en su hábitat: 2</li>
+          <li>Voluntarios y veterinarios disponibles: 12</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="recientes">
+      <h2>Últimos rescates reportados</h2>
+
+      <article>
+        <h3>Caso RC-0018: Perro mestizo en la vía a Crucita</h3>
+        <p>
+          Especie: Perro. Urgencia: <strong>Alta</strong>. Estado: Reportado.
+          Reportado el <time datetime="2026-11-11">11 de noviembre de 2026</time>.
+        </p>
+        <p>Presenta una herida en la pata trasera y signos de deshidratación.</p>
+      </article>
+
+      <article>
+        <h3>Caso RC-0017: Gata con crías en el mercado central</h3>
+        <p>
+          Especie: Gato. Urgencia: Media. Estado: Rescatado.
+          Reportado el <time datetime="2026-11-09">9 de noviembre de 2026</time>.
+        </p>
+        <p>Madre con tres crías resguardadas en una caja; se encuentran estables.</p>
+      </article>
+
+      <article>
+        <h3>Caso RC-0016: Perezoso en el cableado eléctrico</h3>
+        <p>
+          Especie: Fauna silvestre. Urgencia: <strong>Alta</strong>. Estado: En tratamiento.
+          Reportado el <time datetime="2026-11-07">7 de noviembre de 2026</time>.
+        </p>
+        <p>Ejemplar adulto con quemaduras leves, en evaluación para su liberación.</p>
+      </article>
+
+      <p><a href="rescates.html">Ver el listado completo de casos</a></p>
+    </section>
+
+    <section id="proceso">
+      <h2>Cómo funciona el proceso</h2>
+      <ol>
+        <li><strong>Reportado:</strong> el ciudadano registra el caso con especie, ubicación y descripción.</li>
+        <li><strong>Rescatado:</strong> un voluntario asignado traslada al animal al refugio.</li>
+        <li><strong>En tratamiento:</strong> el veterinario evalúa y documenta la atención médica.</li>
+        <li><strong>En adopción:</strong> el animal doméstico queda disponible para una familia.</li>
+        <li><strong>Adoptado o liberado:</strong> el caso termina con la adopción o con la liberación de la fauna silvestre.</li>
+      </ol>
+    </section>
+
+    <section id="actores">
+      <h2>Quiénes participan</h2>
+      <dl>
+        <dt>Ciudadano o reportante</dt>
+        <dd>Reporta animales en riesgo, consulta el estado de su caso y solicita adopciones.</dd>
+        <dt>Voluntario o veterinario</dt>
+        <dd>Recibe notificaciones de nuevos rescates, atiende los casos y actualiza su estado.</dd>
+        <dt>Administrador del refugio</dt>
+        <dd>Asigna responsables, evalúa solicitudes de adopción y genera reportes.</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <address>
+      Refugio Animal Manabí, Portoviejo, Ecuador.
+      Correo: <a href="mailto:contacto@refugioanimal.example">contacto@refugioanimal.example</a>.
+      Teléfono: <a href="tel:+59350000000">(05) 000-0000</a>.
+    </address>
+    <p><small>&copy; 2026 Edison Erwin Salazar Ajila. Proyecto académico de Desarrollo de Sistemas Informáticos, Universidad Técnica de Manabí.</small></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listado de los casos de rescate registrados en el refugio, con especie, urgencia, estado y responsable.">
+  <meta name="author" content="Edison Erwin Salazar Ajila">
+  <title>Casos registrados | Sistema de Control de Rescate y Adopción Animal</title>
+</head>
+<body>
+
+  <!-- Encabezado y logo -->
+  <header>
+    <img src="assets/img/logo-refugio.svg" alt="Logo del Refugio Animal" width="80" height="80">
+    <h1>Sistema de Control de Rescate y Adopción Animal</h1>
+    <p>Refugio Animal Manabí: cada reporte cuenta, cada caso tiene seguimiento.</p>
+  </header>
+
+  <!-- Menú principal común a todas las páginas -->
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="reportar.html">Reportar rescate</a></li>
+      <li><a href="rescates.html" aria-current="page">Casos registrados</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido exclusivo de la página -->
+  <main>
+
+    <section id="listado">
+      <h2>Casos de rescate registrados</h2>
+      <p>
+        Listado de los casos con su especie, nivel de urgencia, estado actual y responsable asignado.
+        Para agregar un caso, use el formulario de <a href="reportar.html">reporte de rescate</a>.
+      </p>
+
+      <table>
+        <caption>Casos de rescate al 12 de noviembre de 2026</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Título del caso</th>
+            <th scope="col">Especie</th>
+            <th scope="col">Urgencia</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Responsable</th>
+            <th scope="col">Fecha de reporte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">RC-0018</th>
+            <td>Perro mestizo en la vía a Crucita</td>
+            <td>Perro</td>
+            <td>Alta</td>
+            <td>Reportado</td>
+            <td>Sin asignar</td>
+            <td><time datetime="2026-11-11">11/11/2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">RC-0017</th>
+            <td>Gata con crías en el mercado central</td>
+            <td>Gato</td>
+            <td>Media</td>
+            <td>Rescatado</td>
+            <td>Voluntario: Luis Mendoza</td>
+            <td><time datetime="2026-11-09">09/11/2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">RC-0016</th>
+            <td>Perezoso en el cableado eléctrico</td>
+            <td>Fauna silvestre</td>
+            <td>Alta</td>
+            <td>En tratamiento</td>
+            <td>Veterinaria: Dra. Ana Vera</td>
+            <td><time datetime="2026-11-07">07/11/2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">RC-0015</th>
+            <td>Cachorro abandonado en el parque</td>
+            <td>Perro</td>
+            <td>Baja</td>
+            <td>En adopción</td>
+            <td>Voluntaria: Carla Zambrano</td>
+            <td><time datetime="2026-11-03">03/11/2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">RC-0014</th>
+            <td>Gato adulto con fractura</td>
+            <td>Gato</td>
+            <td>Alta</td>
+            <td>En tratamiento</td>
+            <td>Veterinario: Dr. Pedro Cedeño</td>
+            <td><time datetime="2026-10-30">30/10/2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">RC-0013</th>
+            <td>Iguana verde atrapada en una malla</td>
+            <td>Fauna silvestre</td>
+            <td>Media</td>
+            <td>Liberado</td>
+            <td>Veterinaria: Dra. Ana Vera</td>
+            <td><time datetime="2026-10-26">26/10/2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">RC-0012</th>
+            <td>Perra adulta desnutrida</td>
+            <td>Perro</td>
+            <td>Media</td>
+            <td>Adoptado</td>
+            <td>Voluntario: Luis Mendoza</td>
+            <td><time datetime="2026-10-20">20/10/2026</time></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="6">Total de casos listados</th>
+            <td>7</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="detalle">
+      <h2>Detalle de los casos prioritarios</h2>
+
+      <article>
+        <h3>RC-0018: Perro mestizo en la vía a Crucita</h3>
+        <ul>
+          <li>Urgencia: Alta</li>
+          <li>Estado: Reportado, pendiente de asignar voluntario</li>
+          <li>Descripción: herida en la pata trasera y signos de deshidratación.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>RC-0016: Perezoso en el cableado eléctrico</h3>
+        <ul>
+          <li>Urgencia: Alta</li>
+          <li>Estado: En tratamiento</li>
+          <li>Descripción: quemaduras leves; en evaluación de aptitud para su liberación.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>RC-0014: Gato adulto con fractura</h3>
+        <ul>
+          <li>Urgencia: Alta</li>
+          <li>Estado: En tratamiento</li>
+          <li>Descripción: fractura en la pata delantera, inmovilizada y en recuperación.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="estados">
+      <h2>Significado de los estados</h2>
+      <dl>
+        <dt>Reportado</dt>
+        <dd>El ciudadano registró el caso y aún no se realiza el rescate.</dd>
+        <dt>Rescatado</dt>
+        <dd>El animal fue trasladado al refugio por un voluntario.</dd>
+        <dt>En tratamiento</dt>
+        <dd>El veterinario lo evalúa y le brinda atención médica.</dd>
+        <dt>En adopción</dt>
+        <dd>El animal doméstico está disponible para ser adoptado.</dd>
+        <dt>Adoptado</dt>
+        <dd>El animal fue entregado a una familia.</dd>
+        <dt>Liberado</dt>
+        <dd>El ejemplar de fauna silvestre regresó a su hábitat.</dd>
+        <dt>Cerrado</dt>
+        <dd>El caso fue archivado.</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <address>
+      Refugio Animal Manabí, Portoviejo, Ecuador.
+      Correo: <a href="mailto:contacto@refugioanimal.example">contacto@refugioanimal.example</a>.
+      Teléfono: <a href="tel:+59350000000">(05) 000-0000</a>.
+    </address>
+    <p><small>&copy; 2026 Edison Erwin Salazar Ajila. Proyecto académico de Desarrollo de Sistemas Informáticos, Universidad Técnica de Manabí.</small></p>
+  </footer>
+
+</body>
+</html>
